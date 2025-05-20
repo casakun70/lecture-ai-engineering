@@ -1,11 +1,13 @@
+
 # New Change
 
 def say_hello(name):
-    print("Hello,    " + name + "!   ")  # greet
+    print("Hello," + name + "!")  # greet
 
 
 def say_hello(nam   e):
-    print(     "Hello,   " + name + "!")  # greet
+    print("Hello," + name + "!")  # greet
+
 
 
 def add(a, b):      return a +     b
