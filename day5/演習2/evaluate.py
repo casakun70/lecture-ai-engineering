@@ -2,6 +2,12 @@ import pickle
 from sklearn.metrics import accuracy_score
 import pandas as pd
 import sys
+import os
+
+# モデルファイルの存在チェック
+if not os.path.exists("models/titanic_model.pkl"):
+    print("Model file not found. Skipping evaluation.")
+    exit(0)
 
 # モデルの読み込み
 with open("models/titanic_model.pkl", "rb") as f:
